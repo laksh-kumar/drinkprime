@@ -4,7 +4,7 @@
 
 }
 body{
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -155,7 +155,7 @@ header.sticky ul li a{
 
 
 .cards{
-    padding: 10% 5%;
+    padding: 20% 3%;
 }
 .cardtext{
     display: inline-block;
@@ -363,7 +363,7 @@ header.sticky ul li a{
 
 .footer-art{
     margin-top: 200px;
-    width: 30%;
+    width: 20%;
 }
 footer{
     width: 100%;
@@ -407,6 +407,9 @@ footer hr{
 
 
 @media screen and (max-width: 850px) {
+    .footer-art{
+        width: 30%;
+    }
     .aboutus{
         padding: 8% 5%;
     }

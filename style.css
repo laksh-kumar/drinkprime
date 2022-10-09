@@ -131,7 +131,7 @@ header.sticky ul li a{
         background: url("images/bgphone.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 40% 20px;
+        padding: 40% 0 40% 20px;
 
     }
     .banner h1{

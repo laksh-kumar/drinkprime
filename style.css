@@ -390,6 +390,10 @@ footer{
 .footerlist li{
     margin-top: 10px;
 }
+.footerlist li:hover{
+    color: rgb(248, 56, 56);
+    transition: 0.5s;
+}
 footer hr{
     margin: 10px 5%;
     background-color: white;

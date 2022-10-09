@@ -1,0 +1,729 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/*               sticky            */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    transition: 0.6s;
+    padding: 14px 20px;
+    overflow: hidden;
+}
+header.sticky{
+    background: #fff;
+    padding: 16px 36px;
+    
+}
+.headerlist li{
+    display: inline;
+}
+.headerlist li a{
+    text-decoration: none;
+    display: inline;
+    padding: 0px 30px 0 15px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.indexliproducts{
+    font-weight: 100 !important;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    font-size: 25px !important;
+}
+.headerlist li a:hover{
+    color: rgb(248, 56, 56);
+    transition: 0.5s;
+}
+header.sticky ul li a{
+    color:#000;
+}
+.logo img{
+    width: 30%; 
+}
+@media screen and (max-width: 850px) {
+    .headerlist{
+        padding: 0;
+    }
+    .headerlist li a{
+        font-size: 20px;
+        display: inline;
+        padding: 0px 7px 0 5px;
+    }
+    .indexliproducts{
+        font-size: 18px !important;
+    }
+    .logo{
+        width: 30%;
+    }
+    .logo img{
+        width: 80%;
+    }
+     header.sticky{
+        padding: 12px 16px;
+    }    
+    .headerlist{
+        padding: 10px 0 0 0 ;
+    }
+
+}
+
+
+.banner{
+    background: url("images/bg.jpg");
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+    padding: 15% 60px;
+
+}
+.banner h1{
+    font-size: 90px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.banner span{
+    text-decoration: underline;
+}
+.banner a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color:rgb(252, 31, 31);
+    font-size: 30px;
+    background: none;
+    padding: 5px 15px;
+    border: solid white;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 500;
+}
+.banner a:hover{
+    background:none;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .banner{
+        background: url("images/bgphone.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 40% 20px;
+
+    }
+    .banner h1{
+        font-size: 55px;
+        font-weight: 800;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .banner a{
+ 
+      
+        font-size: 20px;
+        background: none;
+        padding: 5px 15px;
+        background: white;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+
+}
+
+
+.cards{
+    margin: 10% 5%;
+}
+.cardtext{
+    display: inline-block;
+    width: 50%;
+    padding: auto 20px;
+    text-align: left;
+}
+.cards h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+}
+.cards h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.cards a{
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+    color: #212529;
+}
+.cards a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #212529;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cards a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .cards a:hover{
+    color: #212529;
+  }
+
+
+
+  @media screen and (max-width: 850px) {
+    .cards{
+        width: 100%;
+    }
+    .cards img{
+        width: 40%;
+    }
+    .cards h1{
+        font-size: 24px;
+        margin: 0;
+    }
+    .cards h2{
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .cards a{
+        font-size: 17px;
+        margin-top: 4px;
+    }
+    .cardtext{
+        padding: 0 15px;
+    }
+  }
+
+
+
+
+/* **********************************products page                */
+.navs{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background: white;
+    padding: 16px 36px;
+    top: 0;
+}
+.navlist li{
+    display: inline;
+}
+.navlist li a{
+    text-decoration: none;
+    display: inline;
+    padding: 0px 30px 0 15px;
+    font-size: 30px;
+    color:#212529;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.navlist li a:hover , .logo:hover{
+    color: rgb(248, 56, 56);
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .navlist{
+        padding: 0;
+    }
+    .navlist li a{
+        font-size: 22px;
+        display: inline;
+        padding: 0px 7px 0 5px;
+    }
+    .logo{
+        padding: 7px 0px;
+        width: 30%;
+    }
+    .logo img{
+        width: 80%;
+    }
+    .navs{
+        padding: 6px 16px;
+    }    
+    .navlist{
+        padding: 7px 0 0 0 ;
+    }
+
+}
+
+
+/************products*************************/
+.products{
+    width: 100%;
+    padding: 10%;
+
+}
+.productscard{
+    width: 33%;
+    padding: 4%;
+    text-align: center;
+    display: inline-block;
+}
+.productscard img{
+    width: 100%;
+}
+.productscard a{
+    padding: 7px 20px;
+    background: #000;
+    text-decoration: none;
+    color: antiquewhite;
+    border-radius: 5px;
+    border: 2px solid black;
+
+
+}
+.productscard a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+    
+}
+.banner2{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .products{
+        padding: 5%;
+    }
+    .productscard{
+        width: 49%;
+        padding: 15px 0;
+        text-align: center;
+        display: inline-block;
+    }
+    .productscard a{
+        font-size: 15px;
+        padding: 5px 15px;
+        background: #000;
+        text-decoration: none;
+        color: antiquewhite;
+        border-radius: 5px;
+    }
+    .productscard h2{
+        font-size: 20px;
+    }
+    .banner2 img{
+        width: 140%;
+    }
+}
+/********************* Footer **************  */
+
+
+
+
+
+.footer-art{
+    margin-top: 200px;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    background: black;
+    margin-bottom: 0;
+    color: white;
+}
+.aboutus{
+    display: inline-block;
+    width: 60%;
+    padding: 10%;
+}
+.aboutus p{
+    font-size: 25px;
+}
+
+
+.footerlist{
+    display: inline-block;
+    padding: 0 10%;
+    font-size: 25px;
+    list-style: none;
+    border: 0 0 0 7px solid white;
+}
+.footerlist li{
+    margin-top: 10px;
+}
+footer hr{
+    margin: 10px 5%;
+    background-color: white;
+    height: 3px;
+}
+
+.credits{
+    font-size:20px; 
+    color:white; 
+    text-align:center; 
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .footer-art{
+        width: 150%;
+    }
+    .aboutus{
+        padding: 8% 5%;
+    }
+    .aboutus h1{
+        font-size: 18px;
+    }
+    .aboutus p{
+        font-size: 10px;
+    }
+    .footerlist{
+        padding: 20px 5%;
+    }
+    .footerlist li{
+        font-size: 10px;
+        margin-top: 3px;
+    }
+    .credits{
+        font-size: 13px !important;
+        padding: 5px !important;
+    }
+
+}
+/*********PRoduct page*******************************/
+
+.product-page{
+    margin-top: 200px;
+    width: 100%;
+}
+.pic{
+    display: inline-flex;
+    width: 45%;
+    padding: 0 3%;
+    position: relative;
+}
+.product-details{
+    display: inline-block;
+    width: 54%;
+    padding: 0 5%;
+    position: absolute;
+}
+.product-details h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.description li{
+    font-size: 25px;
+}
+
+.add-to-cart{
+    background: none;
+    color: #000;
+    display: block;
+    margin: 10% 10% 8% 0;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 3px 0;
+    letter-spacing: 5px;
+
+}
+.add-to-cart:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+ 
+@media screen and (max-width: 800px) {
+
+    .pic{
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .pic img{
+        width: 100%;
+    }
+    .product-details{
+        margin-top: 50px;
+        display: block;
+        position: static;
+        width: 100%;
+        padding-left: 10%;
+    }
+    .description{
+        display: block;
+    }
+    .description li{
+        font-size: 18px;
+    }
+    .product-details h1, .product-details h2{
+        margin: 0;
+    }
+    .product-details h1{
+        font-size: 40px;
+    }
+
+
+}
+
+
+
+
+
+
+
+/* Cart styling */
+
+
+
+.cart-body{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20px;
+    border: solid #000;
+    overflow: hidden;
+}
+.thead{
+    background:#1a1c1f;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+ 
+.table td{
+    font-size: 18px;
+
+}
+.checkout-btn{
+    background-color: orangered;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 5px 0;
+    margin-top: 40px;
+    width: 20%;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: 75%;
+
+}
+
+.checkout-btn:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 800px) {
+    .thead{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .table td{
+        padding: 8px 4px !important;
+        font-size: 15px;
+    }
+    .table td button{
+        font-size: 10px !important;
+        padding: 2px;
+    }
+    .table td img{
+        width: 20% !important;
+    }
+    .checkout-btn{
+        font-size: 15px;
+        padding: 5px 0;
+
+    }
+    .checkout-btn:hover{
+        background-color: red;
+        transition: 0.5s;
+    }
+    
+
+}
+
+/* checkout [age */
+.checkout{
+    margin-top: 150px;
+    width: 60%;
+    margin-left: 20%;
+    border: 2px solid #1a1c1f;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.checkout h1{
+    background-color: #0f1011;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding: 20px ;
+}
+.form{
+    padding: 30px 10%;
+
+}
+.form input{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid #9e9e9e;
+}
+.form label{
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 500;
+}
+#btnconfirm{
+    width: 40%;
+    background: orangered;
+    padding: 7px;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 30%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+#btnconfirm:hover{
+    width: 100%;
+    margin-left: 0;
+    transition: 0.5s
+}
+
+@media screen and (max-width: 800px) {
+    .checkout{
+        border-radius: 15px;
+        margin-top: 180px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .checkout h1{
+        font-size: 30px;
+        padding: 15px;
+    }
+    .form{
+        padding: 30px 7%;
+        font-size: 15px;
+    }
+    .form label{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+
+}
+
+
+/* orderplaced  */
+.orderplaced{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 200px;
+    background:#dddddd;
+    padding: 50px;
+}
+.orderplaced img{
+    width: 20%;
+}
+.orderplaced h1{
+    margin-top: 20px;
+    color: #212529;
+    font-size: 40px;
+}
+.orderplaced p{
+    margin-top: 40px;
+    color:#505050;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.orderplaced a{
+    margin-top: 60px;
+    background: rgb(127, 197, 22);
+    font-size: 25px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+.orderplaced a:hover{
+    background: black;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  
+}
+
+@media screen and (max-width: 800px) {
+    .orderplaced{
+        width: 80%;
+        margin-left: 10%;
+        padding: 30px 20px;
+        margin-top: 120px;
+    }
+    .orderplaced img{
+        width: 30%;
+    }
+    .orderplaced h1{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .orderplaced p{
+        margin-top: 30px;
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .orderplaced a{
+        margin-top: 60px;
+        font-size: 18px;
+        padding: 12px 15px;
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+    }
+}

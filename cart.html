@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+<!-- EMail sender -->
+
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("D8KriSwdOYQYWT4pH");
+})();
+</script>
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+<title>Document</title>
+</head>
+
+<body>
+  
+    <div class="navs">
+
+        <div class="logo" data-aos="slide-right"><a href="index.html"><img src="images/logo.png" width="30%" alt=""></a></div>
+        <ul class="navlist">
+        </ul>
+      
+    </div>
+
+    <h1 style="margin: 180px 0; font-size:50px; text-align:center;">Cart</h1>
+
+    <div class="cart-body">
+        
+    </div>
+    
+    <button class="checkout-btn"><a href="#checkoutForm" style="text-decoration: none; color: white; width:100%;">Checkout</a></button>
+
+
+
+
+
+
+
+    
+    <div class="checkout" id="checkoutForm">
+
+        <h1>Checkout</h1>
+        <form action="67534.html" class="form" onsubmit="placeOrder()">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Jake Peralta" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="jakeperalta@xyz.com" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" placeholder="+92xxxxxxxxxx" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Shaitan gali, Khatra Mehal, Andher Nagar." required>
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="Karachi" required>
+            <input type="submit" value="Confirm"  id="btnconfirm">
+        </form>
+    </div>
+
+
+
+    <img src="images/footerart.png" alt="" class="footer-art">
+     <footer>
+        <div class="aboutus">
+            <h1>About Prime</h1>
+            <p>Prime Hydration was developed to fill the void where great taste meets function. With bold, thirst-quenching flavors to help you refresh, replenish, and refuel, Prime is the perfect boost for any endeavor. We’re confident you’ll love it as much as we do. ​</p>
+    
+        </div>
+        <ul class="footerlist">
+            <li>Where To Buy</li>
+            <li>About Us</li>
+            <li>Terms Of Use</li>
+            <li>FAQs</li>
+            <li>Refund Policy</li>
+            <li>Contact Us</li>
+        </ul>
+    
+        <hr>
+        <p class="credits"><i class="bi bi-code-slash"></i> with <i class="bi bi-heart"></i> by Laksh</p>
+    </footer>
+    
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+             
+      
+      
+      <!-- our aos data -->
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+              <script>
+              AOS.init({
+                  offset: 300,
+                  duration: 1000,
+              });
+              </script>
+      
+
+      
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+
+      <script src="script.js"></script>
+      </body>
+      </html>

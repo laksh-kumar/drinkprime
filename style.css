@@ -363,7 +363,7 @@ header.sticky ul li a{
 
 .footer-art{
     margin-top: 200px;
-    width: 100%;
+    width: 30%;
 }
 footer{
     width: 100%;
@@ -407,9 +407,6 @@ footer hr{
 
 
 @media screen and (max-width: 850px) {
-    .footer-art{
-        width: 100%;
-    }
     .aboutus{
         padding: 8% 5%;
     }
